@@ -1,2 +1,2 @@
 # shopping-cart
-E commerce shopping cart built with react
+E commerce shopping cart built with React
