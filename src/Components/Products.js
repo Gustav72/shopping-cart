@@ -25,20 +25,24 @@ export default function Products () {
             price: "$1,000"
         },
         {
-            name: "keeshond",
-            image: "./images/keeshond.png",
-            price: "$1,000"
-        },
-        {
             name: "Shiba Inu",
             image: "./images/shiba-inu.png",
             price: "$1,500"
-        }
+        },
+        {
+            name: "Keeshond",
+            image: "./images/keeshond.png",
+            price: "$1,000"
+        },
+
     ]
 
     return (
         <div>
-            <Card product={PUPPIES}/>
+            <h1>Puppies!</h1>
+            <div className="product-container">
+                <Card product={PUPPIES}/>
+            </div>
         </div>
     )
 }

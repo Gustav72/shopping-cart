@@ -1,8 +1,8 @@
-import React from "react";
-import Navbar from "./Components/Navbar"
-import Home from "./Components/Home"
-import Products from "./Components/Products"
-import { Route, Routes } from "react-router-dom"
+import Navbar from "./Components/Navbar";
+import Cart from "./Components/Cart";
+import Home from "./Components/Home";
+import Products from "./Components/Products";
+import { Route, Routes } from "react-router-dom";
 
 export default function App() {
   return (
@@ -14,6 +14,7 @@ export default function App() {
           <Route path="/products" element={<Products />} />
         </Routes>
       </div>
+      <Cart />
     </>
   );
 }
