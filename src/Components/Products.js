@@ -1,50 +1,44 @@
-import React from "react";
+import Card from "./Card"
 
 export default function Products () {
 
-    const puppies = [
+    const PUPPIES = [
         {
             name: "Australian Cattle Dog",
-            image: "./images/australian-cattle-dog",
+            image: "./images/australian-cattle-dog.png",
             price: "$1,000"
 
         },
         {
             name: "Corgi",
-            image: "./images/corgi",
+            image: "./images/corgi.png",
             price: "$1,200"
         },
         {
             name: "German Shepherd",
-            image: "./images/german-shepherd",
+            image: "./images/german-shepherd.png",
             price: "$1,400"
-        }
-        ,
+        },
         {
             name: "Golden Retriever",
-            image: "./images/golden-retriever",
+            image: "./images/golden-retriever.png",
             price: "$1,000"
         },
         {
             name: "keeshond",
-            image: "./images/keeshond",
+            image: "./images/keeshond.png",
             price: "$1,000"
         },
         {
             name: "Shiba Inu",
-            image: "./images/shiba-inu",
+            image: "./images/shiba-inu.png",
             price: "$1,500"
         }
     ]
 
-
-
-
-
-
     return (
         <div>
-            <h1>Products</h1>
+            <Card product={PUPPIES}/>
         </div>
     )
 }
