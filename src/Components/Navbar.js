@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
-
+import cartItems from "./Cart";
 const Navbar = () => {
+  if (cartItems.length < 1) {
+  }
+
   return (
     <nav className="nav-bar">
       <Link to="/" className="store-name">
@@ -24,7 +27,7 @@ const Navbar = () => {
               alt="shopping cart"
               className="cart-img"
             />
-            <div className="cart-number">1</div>
+            <div className="cart-number">{cartItems.length}</div>
           </div>
         </li>
       </ul>

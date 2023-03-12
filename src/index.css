@@ -90,3 +90,19 @@ h1 {
 .card img {
   width: 80%;
 }
+
+/* Cart Container */
+
+.cart-active {
+  position: absolute;
+  background-color: red;
+  position: fixed;
+  height: 100vh;
+  width: 600px;
+  top: 0;
+  right: 0;
+}
+
+.cart-inactive {
+  visibility: hidden;
+}
