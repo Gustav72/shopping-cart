@@ -16,7 +16,7 @@ export default function App() {
   return (
     <>
       <div onClick={handleVisible}>
-        <Navbar />
+        <Navbar isVisible={setIsVisible} />
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
