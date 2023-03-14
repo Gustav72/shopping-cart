@@ -10,7 +10,7 @@ export default function App() {
   const [isVisible, setIsVisible] = useState(false);
 
   function handleVisible() {
-    if (isVisible) setIsVisible(!isVisible);
+    if (isVisible) setIsVisible(false);
   }
 
   return (

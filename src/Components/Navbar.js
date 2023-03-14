@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import cartItems from "./Cart";
-const Navbar = () => {
+
+const Navbar = ({ isVisible }) => {
   if (cartItems.length < 1) {
+  }
+
+  function revealCart() {
+    if (!isVisible) isVisible = true;
   }
 
   return (
@@ -25,6 +30,7 @@ const Navbar = () => {
             <img
               src="images/cart-outline.svg"
               alt="shopping cart"
+              onClick={revealCart}
               className="cart-img"
             />
             <div className="cart-number">{cartItems.length}</div>
