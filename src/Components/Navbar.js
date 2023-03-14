@@ -2,11 +2,8 @@ import { Link } from "react-router-dom";
 import cartItems from "./Cart";
 
 const Navbar = ({ isVisible }) => {
-  if (cartItems.length < 1) {
-  }
-
   function revealCart() {
-    if (!isVisible) isVisible = true;
+    isVisible((prevState) => !prevState);
   }
 
   return (
