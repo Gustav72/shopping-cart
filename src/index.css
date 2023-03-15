@@ -51,7 +51,7 @@ h1 {
   text-decoration: none;
 }
 
-.cart-img-active {
+.cart-img-inactive {
   height: 80px;
   background-color: white;
   padding: 5px;

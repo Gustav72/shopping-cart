@@ -8,9 +8,14 @@ import React, { useState } from "react";
 
 export default function App() {
   const [isVisible, setIsVisible] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
 
   function handleVisible() {
     if (isVisible) setIsVisible(false);
+  }
+
+  function handleAddToCart(item) {
+    setCartItems([...cartItems, item]);
   }
 
   return (
@@ -20,11 +25,17 @@ export default function App() {
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
+            <Route
+              path="/products"
+              element={<Products onAddToCart={handleAddToCart} />}
+            />
           </Routes>
         </div>
       </div>
-      <Cart className={isVisible ? "cart-active" : "cart-inactive"} />
+      <Cart
+        cartItems={cartItems}
+        className={isVisible ? "cart-active" : "cart-inactive"}
+      />
     </>
   );
 }

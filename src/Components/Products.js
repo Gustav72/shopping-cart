@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-export default function Products() {
+export default function Products({ onAddToCart }) {
   const PUPPIES = [
     {
       name: "Australian Cattle Dog",
@@ -38,7 +38,9 @@ export default function Products() {
     <div>
       <h1>Puppies</h1>
       <div className="product-container">
-        <Card product={PUPPIES} />
+        {PUPPIES.map((puppy) => (
+          <Card key={puppy.name} product={puppy} onAddToCart={onAddToCart} />
+        ))}
       </div>
     </div>
   );

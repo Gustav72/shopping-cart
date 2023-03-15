@@ -1,15 +1,7 @@
 import { Link } from "react-router-dom";
 import cartItems from "./Cart";
 
-import React, { useState } from "react";
-
 const Navbar = ({ isVisible }) => {
-  const [isCartNumVisible, setIsCartNumVisible] = useState(false);
-
-  function handleCartNumber() {
-    if (isCartNumVisible) setIsCartNumVisible(false);
-  }
-
   function revealCart() {
     isVisible((prevState) => !prevState);
   }
@@ -39,9 +31,9 @@ const Navbar = ({ isVisible }) => {
               className="cart-img"
             />
             <div
-              className={
-                isCartNumVisible ? "cart-img-active" : "cart-img-inactive"
-              }
+            //   className={
+            //     isCartNumVisible ? "cart-img-active" : "cart-img-inactive"
+            //   }
             >
               {cartItems.length}
             </div>
