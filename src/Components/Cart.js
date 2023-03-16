@@ -1,6 +1,4 @@
 export default function Cart({ className, cartItems }) {
-  //   let cartItems = [];
-
   return (
     <div className={className}>
       <h1>Cart</h1>
