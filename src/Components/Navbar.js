@@ -30,13 +30,7 @@ const Navbar = ({ isVisible }) => {
               onClick={revealCart}
               className="cart-img"
             />
-            <div
-            //   className={
-            //     isCartNumVisible ? "cart-img-active" : "cart-img-inactive"
-            //   }
-            >
-              {cartItems.length}
-            </div>
+            <div>{cartItems.length}</div>
           </div>
         </li>
       </ul>
