@@ -53,8 +53,6 @@ export default function App() {
     });
   };
 
-  console.log("handleUpdateCartItem in App", handleUpdateCartItem);
-
   return (
     <>
       <div onClick={handleVisible}>
