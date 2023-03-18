@@ -1,7 +1,14 @@
 import { Link } from "react-router-dom";
-import cartItems from "./Cart";
+import { useEffect, useState } from "react";
 
-const Navbar = ({ isVisible }) => {
+const Navbar = ({ isVisible, cartItems }) => {
+  const [itemCount, setItemCount] = useState(0);
+
+  useEffect(() => {
+    const count = cartItems.reduce((total, item) => total + item.quantity, 0);
+    setItemCount(count);
+  }, [cartItems]);
+
   function revealCart() {
     isVisible((prevState) => !prevState);
   }
@@ -30,7 +37,14 @@ const Navbar = ({ isVisible }) => {
               onClick={revealCart}
               className="cart-img"
             />
-            <div>{cartItems.length}</div>
+            <div
+              className="cart-items-number"
+              style={{
+                visibility: itemCount === 0 ? "hidden" : "visible",
+              }}
+            >
+              {itemCount}
+            </div>
           </div>
         </li>
       </ul>
