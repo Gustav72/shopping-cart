@@ -1,4 +1,6 @@
 export default function Cart({ className, cartItems, onUpdateCartItem }) {
+  console.log("onUpdateCrtItem in Cart", onUpdateCartItem);
+
   const getTotalPrice = () => {
     return cartItems.reduce(
       (total, item) =>

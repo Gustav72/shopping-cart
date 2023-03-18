@@ -4,7 +4,7 @@ export default function Card({ product, onAddToCart }) {
       <h3>{product.name}</h3>
       <img src={product.image} alt="puppy" />
       <p>${product.price.toString()}</p>
-      <button key={product.name} onClick={() => onAddToCart(product)}>
+      <button key={product.name} onClick={onAddToCart}>
         Add to Cart
       </button>
     </div>
