@@ -5,32 +5,32 @@ export default function Products({ onAddToCart }) {
     {
       name: "Australian Cattle Dog",
       image: "./images/australian-cattle-dog.png",
-      price: "$1,000",
+      price: 1000,
     },
     {
       name: "Corgi",
       image: "./images/corgi.png",
-      price: "$1,200",
+      price: 1200,
     },
     {
       name: "German Shepherd",
       image: "./images/german-shepherd.png",
-      price: "$1,400",
+      price: 1400,
     },
     {
       name: "Golden Retriever",
       image: "./images/golden-retriever.png",
-      price: "$1,000",
+      price: 1000,
     },
     {
       name: "Shiba Inu",
       image: "./images/shiba-inu.png",
-      price: "$1,500",
+      price: 1500,
     },
     {
       name: "Keeshond",
       image: "./images/keeshond.png",
-      price: "$1,000",
+      price: 1000,
     },
   ];
 
@@ -39,7 +39,11 @@ export default function Products({ onAddToCart }) {
       <h1>Puppies</h1>
       <div className="product-container">
         {PUPPIES.map((puppy) => (
-          <Card key={puppy.name} product={puppy} onAddToCart={onAddToCart} />
+          <Card
+            key={puppy.name}
+            product={puppy}
+            onAddToCart={() => onAddToCart(puppy)}
+          />
         ))}
       </div>
     </div>

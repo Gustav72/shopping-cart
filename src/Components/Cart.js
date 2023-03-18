@@ -2,7 +2,7 @@ export default function Cart({ className, cartItems, onUpdateCartItem }) {
   const getTotalPrice = () => {
     return cartItems.reduce(
       (total, item) =>
-        total + parseFloat(item.product.price.slice(1)) * item.quantity,
+        total + parseFloat(item.product.price).toFixed(2) * item.quantity,
       0
     );
   };
@@ -14,12 +14,10 @@ export default function Cart({ className, cartItems, onUpdateCartItem }) {
         <div key={index} className="cart-item">
           <h3>{item.product.name}</h3>
           <img src={item.product.image} alt="puppy" />
-          <p>{item.product.price}</p>
+          <p>${item.product.price.toString()}</p>
           <p>Quantity: {item.quantity}</p>
-          <button onClick={() => onUpdateCartItem(item.product, "add")}>
-            Add
-          </button>
-          <button onClick={() => onUpdateCartItem(item.product, "delete")}>
+          <button onClick={() => onUpdateCartItem(item, "add")}>Add</button>
+          <button onClick={() => onUpdateCartItem(item, "delete")}>
             Delete
           </button>
         </div>
