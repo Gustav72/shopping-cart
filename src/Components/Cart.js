@@ -23,6 +23,7 @@ export default function Cart({ className, cartItems, onUpdateCartItem }) {
         </div>
       ))}
       <h2>Total Price: ${getTotalPrice().toFixed(2)}</h2>
+      <button>Checkout Before Its Too Late</button>
     </div>
   );
 }
