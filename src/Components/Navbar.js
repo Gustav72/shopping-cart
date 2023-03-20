@@ -35,10 +35,10 @@ const Navbar = ({ isVisible, cartItems }) => {
               src="images/cart-outline.svg"
               alt="shopping cart"
               onClick={revealCart}
-              className="cart-img"
+              className="cart-img-active"
             />
             <div
-              className="cart-items-number"
+              className="cart-item-number"
               style={{
                 visibility: itemCount === 0 ? "hidden" : "visible",
               }}
