@@ -2,21 +2,20 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div>
+    <div className="home">
       <div className="home-container">
-        <div>
+        <div className="call-to-action">
           <h1>Puppies That Stay Puppies!</h1>
-          <h4>Once In A Lifetime Opportunity</h4>
-          <button>
+          <button className="home-button">
             <Link to="/products" className="link">
-              See Pups Now!
+              Get One Now!
             </Link>
           </button>
         </div>
         <div>
           <img
             className="home-puppy"
-            src="images/shiba-inu.png"
+            src="images/home-puppies.png"
             alt="forever puppy"
           />
         </div>

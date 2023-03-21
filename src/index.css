@@ -7,20 +7,11 @@
 
 body {
   margin: 0;
-  width: 100%;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 h1 {
   text-align: center;
-  font-size: 3rem;
-  padding-top: 10px;
-}
-
-h4 {
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 10px;
+  font-size: 4rem;
 }
 
 /* Navbar */
@@ -44,7 +35,7 @@ h4 {
 }
 
 .link:hover {
-  color: rgba(106, 227, 35, 255);
+  color: rgba(123, 193, 66, 255);
   transition: transform 0.15s ease-in-out 0s;
 }
 
@@ -58,13 +49,13 @@ h4 {
 
 .store-name {
   font-size: 4rem;
-  color: rgba(106, 227, 35, 255);
+  color: rgba(123, 193, 66, 255);
   text-decoration: none;
 }
 
 .cart-img-active {
   height: 80px;
-  background-color: rgba(106, 227, 35, 255);
+  background-color: rgba(123, 193, 66, 255);
   padding: 5px;
   border-radius: 50%;
 }
@@ -100,18 +91,37 @@ ul {
 .home-container {
   display: flex;
   justify-content: center;
+  gap: 200px;
+  padding-left: 150px;
+  align-items: center;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-image {
   transform: scaleY(-1);
   bottom: -500px;
-  background-position: bottom;
   width: 100%;
 }
 
 .home-puppy {
-  padding-left: 0px;
-  width: 100%;
+  width: 72%;
+  height: auto;
+  min-width: 500px;
+}
+.home {
+  min-width: 1024px;
+  min-height: 700px;
+}
+.home-button {
+  background-color: rgba(123, 193, 66, 255);
+  padding: 30px;
+  border-radius: 30px;
 }
 
 /* Product Page */
