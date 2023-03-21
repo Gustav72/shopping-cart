@@ -37,7 +37,7 @@ export default function Products({ onAddToCart }) {
 
   return (
     <div>
-      <h1>Puppies</h1>
+      <h1>Puppies!</h1>
       <div className="product-container">
         {PUPPIES.map((puppy) => (
           <Card
