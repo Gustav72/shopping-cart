@@ -22,7 +22,7 @@ export default function Home() {
       </div>
       <img
         className="home-image"
-        src="images/green-curve.png"
+        src="./shopping-cart/images/green-curve.png"
         aria-label="none"
       />
     </div>
