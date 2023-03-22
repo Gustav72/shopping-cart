@@ -19,6 +19,6 @@ This is a little react website showing off a working shopping cart component! Th
 Future improvements include a more visually appealing UI, a checkout page, and actual integration to a forever puppy development lab to bring the site use to the world.
 
 ![Screenshot of Product Page](./screenshot1.png)
-![Screenshot of Shopping Cart](./screenshot1.png)
+![Screenshot of Shopping Cart](./screenshot2.png)
 
 Thank You for taking the time to look at my work!
