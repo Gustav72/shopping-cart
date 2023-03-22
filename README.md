@@ -2,7 +2,7 @@
 
 Project from [The Odin Project](https://www.theodinproject.com/)
 
-## [Live Demo](https://gustav72.github.io/shopping-cart/products)
+## [Live Demo](https://gustav72.github.io/shopping-cart)
 
 ### Technologies Used
 
