@@ -3,7 +3,7 @@ import Cart from "./Components/Cart";
 import Home from "./Components/Home";
 import Products from "./Components/Products";
 
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import React, { useState } from "react";
 
 export default function App() {
@@ -57,30 +57,6 @@ export default function App() {
     <>
       <div onClick={handleVisible}>
         <Navbar isVisible={setIsVisible} cartItems={cartItems} />
-        <div className="home">
-          <div className="home-container">
-            <div className="call-to-action">
-              <h1>Puppies That Stay Puppies!</h1>
-              <button className="home-button">
-                <Link to="/products" className="link">
-                  Get One Now!
-                </Link>
-              </button>
-            </div>
-            <div>
-              <img
-                className="home-puppy"
-                src="images/home-puppies.png"
-                alt="forever puppy"
-              />
-            </div>
-          </div>
-          <img
-            className="home-image"
-            src="./shopping-cart/images/green-curve.png"
-            aria-label="none"
-          />
-        </div>
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
