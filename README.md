@@ -2,8 +2,6 @@
 
 Project from [The Odin Project](https://www.theodinproject.com/)
 
-## [Live Demo](https://gustav72.github.io/shopping-cart)
-
 ### Technologies Used
 
 <a href="https://reactjs.org/docs/getting-started.html" target="_blank" rel="noreferrer"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react" width="30" height="30"/> </a>React
